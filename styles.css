@@ -1,0 +1,162 @@
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0 auto;
+  margin: 0 auto;
+}
+
+.container {
+  background-color: blue;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-rows: minmax(16.7rem, auto);
+  height: 100vh;
+  margin: 0 auto;
+  grid-template-areas: 
+  "name name profile image image"
+  "experience education blog image image"
+  "social-media contact pro image image"
+}
+
+h2,
+h4 {
+  color: white;
+}
+
+p {
+  color: white;
+}
+
+article {
+  display: flex;
+}
+
+.name {
+  flex-direction: column;
+  background-color: #60B980;
+  grid-area: name;
+}
+
+.profile {
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  background-color: #F3A13A;
+  grid-area: profile;
+}
+
+.experience {
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  background-color: #3F8ABF;
+  grid-area: experience;
+}
+
+.education {
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  background-color: #E16451;
+  grid-area: education;
+}
+
+.blog {
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  background-color: #3DBB7C;
+  grid-area: blog;
+}
+
+.social-media {
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  background-color: F66932;
+  grid-area: social-media;
+}
+
+.contact {
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  background-color: #278CC2;
+  background-repeat: no-repeat;
+  grid-area: contact;
+}
+
+.portfolio {
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  background-color: #F66932;
+  grid-area: pro;
+}
+
+.image {
+  background-image: url('ron-b.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  align-items: center;
+  justify-content: space-between;
+  grid-area: image;
+}
+
+.icons {
+  height: 20%;
+  width: 20%;
+}
+
+.header-icons {
+  height: 3%;
+  width: 3%;
+}
+
+.header-box {
+  border: solid 2px white;
+}
+
+.back-icon {
+  height: 10%;
+  width: 10%;
+}
+
+.forward-icon {
+  height: 10%;
+  width: 10%;
+}
+
+@media screen and (max-width: 750px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(16.7rem, auto);
+    margin: 0 auto;
+    grid-template-areas: 
+    "image image image"
+    "name name profile"
+    "experience education blog"
+    "social-media contact pro";
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: (16.7rem, auto);
+    margin: 0 auto;
+    grid-template-areas: 
+    "image image"
+    "name name"
+    "profile experience"
+    "education blog"
+    "social-media contact"
+    "pro pro";
+  }
+}
