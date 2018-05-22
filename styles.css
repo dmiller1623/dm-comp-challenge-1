@@ -5,8 +5,8 @@
 }
 
 body {
-  padding: 0 auto;
   margin: 0 auto;
+  padding: 0 auto;
 }
 
 .container {
@@ -28,8 +28,8 @@ h4 {
 }
 
 p {
-  margin-top: 0;
   color: white;
+  margin-top: 0;
 }
 
 article {
@@ -40,6 +40,12 @@ button {
   display: flex;
   flex-direction: row;
   margin-right: 1rem;
+}
+
+span {
+  border: 2px solid white;
+  flex-direction: column;
+  padding: .5rem;
 }
 
 .buttons {
@@ -53,76 +59,76 @@ button {
 }
 
 .name {
-  padding-left: 2rem;
-  flex-direction: column;
   background-color: #60B980;
+  flex-direction: column;
   grid-area: name;
+  padding-left: 2rem;
 }
 
 .profile {
-  flex-direction: column-reverse;
   align-items: center;
-  justify-content: center;
   background-color: #F3A13A;
+  flex-direction: column-reverse;
   grid-area: profile;
+  justify-content: center;
 }
 
 .experience {
-  flex-direction: column-reverse;
   align-items: center;
-  justify-content: center;
   background-color: #3F8ABF;
+  flex-direction: column-reverse;
   grid-area: experience;
+  justify-content: center;
 }
 
 .education {
-  flex-direction: column-reverse;
   align-items: center;
-  justify-content: center;
   background-color: #E16451;
+  flex-direction: column-reverse;
   grid-area: education;
+  justify-content: center;
 }
 
 .blog {
-  flex-direction: column-reverse;
   align-items: center;
-  justify-content: center;
   background-color: #3DBB7C;
+  flex-direction: column-reverse;
   grid-area: blog;
+  justify-content: center;
 }
 
 .social-media {
-  flex-direction: column-reverse;
   align-items: center;
-  justify-content: center;
   background-color: #F66932;
+  flex-direction: column-reverse;
   grid-area: social-media;
+  justify-content: center;
 }
 
 .contact {
-  flex-direction: column-reverse;
   align-items: center;
-  justify-content: center;
   background-color: #278CC2;
   background-repeat: no-repeat;
+  flex-direction: column-reverse;
   grid-area: contact;
+  justify-content: center;
 }
 
 .portfolio {
-  flex-direction: column-reverse;
   align-items: center;
-  justify-content: center;
   background-color: #F66932;
+  flex-direction: column-reverse;
   grid-area: pro;
+  justify-content: center;
 }
 
 .image {
+  align-items: center;
   background-image: url('ron-b.jpg');
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  align-items: center;
-  justify-content: space-between;
   grid-area: image;
+  justify-content: space-between;
 }
 
 .icons {
@@ -136,19 +142,14 @@ button {
 }
 
 .header-box {
-  border: solid 2px white;
-  width: 20%;
-  height: 20%;
   background-color: #60B980;
+  border: solid 2px white;
   color: white;
+  height: 20%;
+  width: 20%;
 }
 
 
-span {
-  padding: .5rem;
-  flex-direction: column;
-  border: 2px solid white;
-}
 
 .back-icon {
   height: 10%;
@@ -158,10 +159,6 @@ span {
 .forward-icon {
   height: 10%;
   width: 10%;
-}
-
-.nav-container {
-  /*display: flex;*/
 }
 
 .nav-bar {
